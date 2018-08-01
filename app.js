@@ -2,8 +2,11 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const Content = require('./models/content');
+const db = require('./credentials');
 
-mongoose.connect("mongodb://tkusaka:diligen0731Assessment@ds161391.mlab.com:61391/diligen", { useNewUrlParser: true })
+
+
+mongoose.connect(db.conn, { useNewUrlParser: true })
 .then(()=>{
     console.log('Connected to mLab!');
 })
