@@ -1,8 +1,8 @@
 {
   "name": "diligen",
   "version": "1.0.0",
-  "description": "filigen assessment app",
-  "main": "app.js",
+  "description": "diligen assessment app",
+  "main": "server.js",
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
